@@ -3,6 +3,7 @@ package com.matto;
 
 import com.matto.user.pojo.TUser;
 import com.matto.user.service.IUserService;
+import com.sun.org.apache.xpath.internal.SourceTree;
 import org.junit.Test;
 import org.junit.runner.RunWith;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -32,5 +33,8 @@ public class JavaTest {
     public void test() {
         TUser user = userService.getUserById(1);
         System.out.println(user.getUserName());
+        System.out.println(user.getPassword());
     }
+
+
 }
